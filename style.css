@@ -97,7 +97,7 @@ section.project div.description a {
 
 section.about div.photo {
     grid-column: 1 / span 6;
-    border: single rgba(175, 201, 239, 1);
+    border: double rgba(44, 44, 44, 1); 
 }
 
 section.about div.description {
