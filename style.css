@@ -1,0 +1,232 @@
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: rgba(250, 251, 255, 1);
+    color: rgba(44, 44, 44, 1);
+    margin: 80px auto 48px auto;
+    width: 1120px; 
+}
+
+header {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+   
+}
+
+#logo {
+    max-width: 275px;
+}
+
+h1, nav, footer {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 0 0 16px 0;
+}
+
+a {
+    color: rgba(44, 44, 44, 1); 
+    text-decoration: none;
+    margin: 0 0 0 32px;
+    transition: color 0.3s;
+    border-bottom: 2px solid rgba(250, 251, 255, 1);
+}
+
+a:hover, a.selected {
+    color: rgba(175, 201, 239, 1);
+    text-shadow: 4px rgba(44, 44, 44, 1);
+    border-bottom: 2px solid rgba(175, 201, 239, 1);
+}
+
+section {
+    margin: 80px 0 80px 0; 
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px 32px; 
+    grid-auto-flow: dense;
+}
+
+section h1 {
+    grid-column: 2 / span 10;
+    text-align: center;
+} 
+
+section.project div.artwork{
+    grid-column: 1 / span 8;
+    text-align: center;
+}
+
+section.project div.description {
+    grid-column: 9 / span 4;
+}
+
+section.project img {
+    max-height: 640px;
+    border: double rgba(44, 44, 44, 1); 
+}
+
+section.project-alt div.artwork{
+    grid-column: 5 / span 8;
+}
+
+section.project-alt div.description {
+    grid-column: 1 / span 4;
+
+}
+
+section.project-alt div.description a{
+    margin: 0;
+}
+
+section.project div.description a {
+    margin: 0;
+}
+
+section.about div.photo {
+    grid-column: 1 / span 6;
+    border: single rgba(175, 201, 239, 1);
+}
+
+section.about div.description {
+    grid-column: 7 / span 6;
+}
+
+section.about h1 {
+    margin: 0 0 0 0;
+    text-align: left;
+}
+
+section.about p{
+    margin: 16px 0 16px 0;
+}
+
+section.contact div.form {
+    grid-column: 4 / span 6;
+}
+
+section.contact h1 {
+    text-align: left;
+}
+
+footer {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    margin: 0 16px 0 16px;
+}
+
+input, textarea {
+    width: 100%;
+    background-color: rgba(175, 201, 239, .5);
+    border: solid 1px rgba(44, 44, 44, 1);
+    color: rgba(44, 44, 44, 1);
+    padding: 8px 16px 8px 16px;
+}
+
+label {
+    display: block;
+    margin: 16px 0 16px 0;
+}
+
+textarea {
+    height: 250px;
+}
+
+button {
+    background-color: rgba(175, 201, 239, 1);
+    border: none;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    padding: 8px 16px 8px 16px;
+    border: solid 1px rgba(44, 44, 44, 1);
+}
+
+input:focus, textarea:focus {
+    border: 2px solid;
+}
+
+@media (max-width: 1260px) {
+    body {
+        width: auto;
+        margin: 80px 64px 48px 64px;
+        
+    }
+
+    h1, nav, footer {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 920px) {
+    header {
+        flex-direction: column;
+    }
+    nav {
+        margin: 24px 0 0 0;
+    }
+    header img {
+        max-width: 300px;
+    }
+    header a {
+        margin: 16px 0 16px 0; 
+        padding: 5px;
+    }
+}
+
+@media (max-width: 890px) {
+    section {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px 24px;
+    }
+    iframe {
+        width: 100%;
+    }
+    section h1, 
+    section.project div.artwork, 
+    section.project div.description, 
+    section.about div.photo,
+    section.about div.description,
+    section.contact div.form {
+        grid-column: 1 / span 4;
+    }
+}
+
+@media (max-width: 560px) {
+    body {
+        margin: 32px 32px 32px 32px;
+    }
+    header img {
+        width: 100%; 
+    }
+    nav {
+        font-size: 16px;
+        padding: 2px;
+    }
+
+    a, a:hover, a.selected {
+        padding: 0px;
+        margin: auto;
+    }
+    h1, footer {
+        font-size: 17px;
+    }
+    p{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bradley Wedding: 07.25.20</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> </head>
+<body>
+    <header>
+            <img id="logo" src="weddinglogo.png" alt="Logo">
+        <nav>
+            <a href="index.html">Wedding</a>
+            <a href="about.html">Registry</a>
+            <a href="aboutus.html">Livestream</a>
+            <a href="contact.html" class="selected">RSVP</a>
+        </nav>
+    </header>
+    <section class="contact">
+        <div class="form">
+            <h1>
+                RSVP right here! Thanks & can't wait to celebrate with you! 
+            </h1>
+            <form action="https://formspree.io/xpzylwlg" method="POST">
+                <label>
+                    Name:
+                    <input type="text" name="name">
+                </label>
+                <label>
+                    Email: 
+                    <input type="email" name="_replyto">
+                </label>
+                <label for="RSVP">RSVP:</label>
+                    <select id="RSVP" name="RSVP">
+                        <option value="yes">I will be there!</option>
+                        <option value="no">I can't attend.</option>
+                        <option value="livestream">I'll watch the livestream!</option>
+                    </select>
+                <label>Message:
+                <textarea name="message" id="message"></textarea>
+                </label>
+                <button type="submit" value="Send">Submit</button>
+              </form>
+        </div>
+    </section>
+ 
+    <footer>
+        <a href="https://www.honeyfund.com/wedding/lester-bradley-07-25-2020" target="_blank">Registry</a>
+        <a href="mailto:carolineclester@gmail.com?subject=Savannah Wedding">Email</a>
+    </footer>
+</body>
+</html>
