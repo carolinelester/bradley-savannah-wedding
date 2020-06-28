@@ -76,6 +76,7 @@ section.project div.description {
 section.project img {
     max-height: 640px;
     border: double rgba(44, 44, 44, 1); 
+    
 }
 
 section.project-alt div.artwork{
